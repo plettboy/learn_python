@@ -1,0 +1,68 @@
+print('Hello'[0])
+print('Hello'[-1])
+
+#string
+print('Hello')
+
+#integer
+print(14 + 2)
+
+#float
+print(12.3 + 2.1)
+
+#boolean
+print(false)
+
+#convert the number into a string in a different variable
+num_char = len(input('what your name?'))
+new_num_char = str(num_char)
+
+print('your name has ' + new_num_char + " letters")
+
+#operators
+3 + 5
+#exponents
+print(3 ** 4)
+
+# round
+print(round(8 / 3))
+# round to 2 decimals
+print(round(8 / 3, 2))
+
+#floor division, doesn't give a remainder
+print(round(8 // 3))
+
+#quick divide
+score = 0
+#usr scores a point
+score += 2
+score
+score /= 1
+
+#you can do it with anything
+
+#f type's
+score = 0
+height = 1.8
+
+# f-string
+print(f"your score is {score}, your height is {height}")
+
+#f-strings save time converting data types
+
+#If the bill was $150.00, split between 5 people, with 12% tip. 
+
+#Each person should pay (150.00 / 5) * 1.12 = 33.6
+#Format the result to 2 decimal places = 33.60
+
+#Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
+
+#Write your code below this line 👇
+
+bill = 100.00
+people = 5
+tip = 0.12
+
+tippable_amt = bill * tip
+result = "%0.2f" % ((bill + tippable_amt) / people)
+print(f'your individual amount is {result}')
