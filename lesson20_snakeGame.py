@@ -18,7 +18,11 @@ for position in starting_position:
     segments.append(new_segment)
     screen.update()
  
-
+screen.listen()
+screen.onkey('Down')
+screen.onkey('Up')
+screen.onkey('Left')
+screen.onkey('Right')
 
 game_on = True
 while game_on:
@@ -40,4 +44,5 @@ while game_on:
 # segment_3 = Turtle('square')
 # segment_3.color('white')
 # segment_3.goto(-40,0)
+
 
